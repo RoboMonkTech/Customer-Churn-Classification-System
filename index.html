@@ -1,1 +1,167 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Churn Classification System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>
+            <i class="fa-solid fa-users"></i>
+            Customer Churn Classification System
+        </h1>
+
+        <p>Business Retention Analytics Using Machine Learning</p>
+
+    </header>
+
+    <div class="container">
+
+        <!-- Left Section -->
+
+        <div class="form-card">
+
+            <h2>
+                <i class="fa-solid fa-address-card"></i>
+                Customer Information
+            </h2>
+
+            <label>Customer Name</label>
+            <input type="text" id="name" placeholder="Enter Customer Name">
+
+            <label>Gender</label>
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label>Senior Citizen</label>
+            <select id="senior">
+                <option>No</option>
+                <option>Yes</option>
+            </select>
+
+            <label>Tenure (Months)</label>
+            <input type="number" id="tenure" placeholder="Enter Tenure">
+
+            <label>Monthly Charges (₹)</label>
+            <input type="number" id="monthly" placeholder="Enter Monthly Charges">
+
+            <label>Total Charges (₹)</label>
+            <input type="number" id="total" placeholder="Enter Total Charges">
+
+            <label>Contract Type</label>
+            <select id="contract">
+                <option>Month-to-Month</option>
+                <option>One Year</option>
+                <option>Two Year</option>
+            </select>
+
+            <label>Internet Service</label>
+            <select id="internet">
+                <option>Fiber Optic</option>
+                <option>DSL</option>
+                <option>No</option>
+            </select>
+
+            <button onclick="predictChurn()">
+                <i class="fa-solid fa-chart-line"></i>
+                Predict Customer Churn
+            </button>
+
+        </div>
+
+        <!-- Right Section -->
+
+        <div class="result-card">
+
+            <div class="circle">
+                <i class="fa-solid fa-user-check"></i>
+            </div>
+
+            <h2 id="result">
+                Waiting for Prediction
+            </h2>
+
+            <p id="message">
+                Enter customer details and click
+                <strong>Predict Customer Churn</strong>.
+            </p>
+
+            <div class="result-grid">
+
+                <div class="box">
+                    <h3>Confidence</h3>
+                    <p id="confidence">--</p>
+                </div>
+
+                <div class="box">
+                    <h3>Status</h3>
+                    <p id="status">--</p>
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <h3>Project Information</h3>
+
+                <table>
+
+                    <tr>
+                        <td>Algorithm</td>
+                        <td>Random Forest Classifier</td>
+                    </tr>
+
+                    <tr>
+                        <td>Language</td>
+                        <td>Python</td>
+                    </tr>
+
+                    <tr>
+                        <td>Platform</td>
+                        <td>Google Colab</td>
+                    </tr>
+
+                    <tr>
+                        <td>Deployment</td>
+                        <td>GitHub + Vercel</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        Customer Churn Classification System | Machine Learning Project
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
 
